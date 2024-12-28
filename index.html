@@ -1,26 +1,53 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Carta</title>
-  <link rel="stylesheet" href="style.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="estilos.css">
+	<title>DevDesigner - Feliz Año Niña Fireworks</title>
 </head>
 <body>
-  <main>
-    <div class="container-letter">
-      <div class="cover"></div>
-      <span class="heart">♥</span>
-      <p class="paper" id="mainMessage">
-        Buenos días Pame, te ves muy bien hoy. Que la alegría y el cariño te acompañen siempre. ¡Feliz día!
-      </p>
-      <div class="letter"></div>
-    </div>
-    <div class="options">
-      <button id="open">Abrir</button>
-      <button id="close">Cerrar</butto>
-    </div>
-  </main>
-  <script src="script.js"></script>
+	
+	<div>
+		<h1><span>Feliz</span> Año</h1>
+		                           <p>"Que este nuevo comienzo sea tu mejor capítulo." </p>
+	</div>
+
+	<!-- Script Librería ScrollReveal.js -->
+	<script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+
+	<!-- Script jQuery -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+	<!-- Script Librería Fireworks.js -->
+	<script src="jquery.fireworks.js"></script>
+
+	<!-- Script Configuración Fireworks.js -->
+	<script>
+		$('div').fireworks({
+			opacity: 0.9,
+			width: '100%',
+			height: '100%'
+		});
+	</script>
+
+	<!-- Scripts Configuración ScrollReveal.js -->
+	<script>
+		ScrollReveal().reveal('h1', {
+			delay: 2000,
+			duration: 2000,
+			distance: '400%',
+			origin: 'top',
+			opacity: null
+		});
+
+		ScrollReveal().reveal('p', {
+			delay: 3000,
+			duration: 3000,
+			distance: '400%',
+			origin: 'bottom',
+			opacity: null
+		});
+	</script>
 </body>
 </html>
